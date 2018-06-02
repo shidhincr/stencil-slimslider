@@ -1,5 +1,5 @@
 {
-  "name": "slimslider",
+  "name": "stencil-slimslider",
   "version": "0.0.1",
   "description": "SlimSlider Carousel",
   "main": "dist/slimslider.js",
