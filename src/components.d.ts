@@ -27,33 +27,55 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface MyComponent {
-      'first': string;
-      'last': string;
+    interface SlimSlider {
+      'autoPlay': boolean;
+      'autoPlayTimer': number;
+      'childsClassName': string;
+      'dir': string;
+      'infinite': boolean;
+      'itemsPerSlide': number;
+      'setPan': (enabled: boolean) => void;
+      'showButtons': boolean;
+      'showPointers': boolean;
+      'showThumbnails': boolean;
+      'slideTo': (n: number) => void;
+      'threshold': number;
+      'timing': number;
     }
   }
 
-  interface HTMLMyComponentElement extends StencilComponents.MyComponent, HTMLStencilElement {}
+  interface HTMLSlimSliderElement extends StencilComponents.SlimSlider, HTMLStencilElement {}
 
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLSlimSliderElement: {
+    prototype: HTMLSlimSliderElement;
+    new (): HTMLSlimSliderElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'slim-slider': HTMLSlimSliderElement;
   }
   interface ElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'slim-slider': HTMLSlimSliderElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'my-component': JSXElements.MyComponentAttributes;
+      'slim-slider': JSXElements.SlimSliderAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
-      'first'?: string;
-      'last'?: string;
+    export interface SlimSliderAttributes extends HTMLAttributes {
+      'autoPlay'?: boolean;
+      'autoPlayTimer'?: number;
+      'childsClassName'?: string;
+      'dir'?: string;
+      'infinite'?: boolean;
+      'itemsPerSlide'?: number;
+      'onAfterSlimInit'?: (event: CustomEvent) => void;
+      'onAfterSlimSlide'?: (event: CustomEvent) => void;
+      'showButtons'?: boolean;
+      'showPointers'?: boolean;
+      'showThumbnails'?: boolean;
+      'threshold'?: number;
+      'timing'?: number;
     }
   }
 }

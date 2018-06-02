@@ -1,14 +1,14 @@
 {
-  "name": "my-component",
+  "name": "slimslider",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
-  "main": "dist/mycomponent.js",
+  "description": "SlimSlider Carousel",
+  "main": "dist/slimslider.js",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
-  "browser": "dist/mycomponent.js",
+  "browser": "dist/slimslider.js",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
@@ -17,7 +17,10 @@
     "test": "jest --no-cache",
     "test.watch": "jest --watch --no-cache"
   },
-  "dependencies": {},
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "hammerjs": "^2.0.8"
+  },
   "devDependencies": {
     "@stencil/core": "^0.7.22",
     "@stencil/dev-server": "latest",

@@ -4,12 +4,34 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
   <title>Stencil Component Starter</title>
-  <script src="/build/mycomponent.js"></script>
-
+  <style>
+    html, body {
+      margin: 0;
+    }
+    #demo {
+      padding: 10px;
+      background-color: #0070d450;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
-
+  <div id="demo">
+    <slim-slider auto-play="false" show-buttons="true" show-thumbnails="true">
+      <div class="slim-slide" data-thumb="https://pa.namshicdn.com/product/68/8181/1-cart.jpg">
+        <img src="https://pa.namshicdn.com/product/68/8181/1-zoom.jpg">
+      </div>
+      <div class="slim-slide" data-thumb="https://pa.namshicdn.com/product/68/8181/2-cart.jpg">
+        <img src="https://pa.namshicdn.com/product/68/8181/2-zoom.jpg">
+      </div>
+      <div class="slim-slide" data-thumb="https://pa.namshicdn.com/product/68/8181/3-cart.jpg">
+        <img src="https://pa.namshicdn.com/product/68/8181/3-zoom.jpg">
+      </div>
+      <div class="slim-slide" data-thumb="https://pa.namshicdn.com/product/68/8181/4-cart.jpg">
+        <img src="https://pa.namshicdn.com/product/68/8181/4-zoom.jpg">
+      </div>
+    </slim-slider>
+  </div>
+<script src="/build/slimslider.js"></script>
 </body>
 </html>
