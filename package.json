@@ -1,6 +1,6 @@
 {
   "name": "stencil-slimslider",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "SlimSlider Carousel",
   "main": "dist/slimslider.js",
   "types": "dist/types/components.d.ts",
